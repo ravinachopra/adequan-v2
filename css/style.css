@@ -1,0 +1,689 @@
+@font-face {
+    font-family: helveticaNeue;
+    src: url(../fonts/helveticaneueltstd-roman-webfont.eot); /* IE9 Compat Modes */
+    src: url(../fonts/helveticaneueltstd-roman-webfont.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */       
+       url(../fonts/helveticaneueltstd-roman-webfont.woff) format('woff'), /* Pretty Modern Browsers */
+       url(../fonts/helveticaneueltstd-roman-webfont.ttf)  format('truetype');          
+}
+@font-face {
+    font-family: ropaSans;
+    src: url(../fonts/RopaSans-Regular.ttf); /* IE9 Compat Modes */
+    src: url(../fonts/RopaSans-Regular.otf);
+}
+/*General CSS*/
+body{
+	font-size:20px;
+	line-height: 1.6;
+    position:relative;
+    font-family:helveticaNeue;
+    color: rgb(59,59,59);
+}
+p {
+    margin:0;
+}
+a {
+    text-decoration:none;
+}
+.overlay{
+    background: rgba(0,0,0,0.3);
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.container {
+    width:960px;    
+    padding:0;
+    box-sizing: border-box;
+}
+a:link{
+    text-decoration:none;
+}
+
+/* visited link */
+a:visited,a:hover,a:active  {
+    text-decoration:none ;
+    color:#c6305e ;
+    
+}
+/*rebate offer css start*/
+
+.rebate-offers{
+    text-transform: uppercase;
+    background: #1e988a;
+    color: white;
+    padding: 16px 0;
+    text-align: center;
+    position: relative; 
+    font-size:15px;   
+}
+.rebate-offers p:first-child{
+    font-weight: bold;    
+    font-size:18px;
+}
+.rebate-offers a{
+    color:white;
+    border-bottom:2px solid white;
+}
+.close-button{
+    position: absolute;
+    left: 70%;
+    top: 34%;
+}
+.close-button img{
+    cursor:pointer;
+}
+/*rebate offer css end*/
+
+/*Header CSS start*/
+
+/*fixed header start*/
+/*header{
+	position: fixed;
+    width: 100%;
+    background: white;
+    top: 0;
+    z-index: 11;
+} */
+/*fixed header end*/
+header{
+    padding:30px 0px ;
+    text-align: center;
+	background:#ebebeb;
+}
+header .logo-wrapper img{
+    margin:0 auto;
+}
+header .navigation-menu-wrapper{
+    margin-top:33px;
+}
+header .navigation-menu-wrapper ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+    display:table;
+    width:100%;
+}
+header .navigation-menu-wrapper ul li{
+    width:33.33%;
+    display:table-cell;
+}
+.nav-link-wrapper a{
+    color:black;
+    font-weight:bold;
+    text-transform:uppercase;
+    font-size:16px;
+    display:inline-block;
+}
+.nav-link-wrapper a:hover{
+    color:#1e988a;
+}
+.nav-link-wrapper a span{
+    color: #1e988a;
+    font-size:14px;
+}
+/*Header CSS end*/
+
+/*Footer CSS start*/
+footer{
+    text-align:left;
+	background: #ebebeb;
+    color: rgb(85, 85, 85);
+}
+footer .container>div{
+    margin-top:30px;
+}
+footer .container>div:last-child{
+    margin-top:50px;
+}
+.footer-part-1 ol{
+    padding: 0px 0px 0px 2%;
+}
+.footer-part-1 ol li{
+    margin-bottom:20px;
+}
+.footer-part-1 ol li:last-child{
+    margin-bottom:0;
+}
+.footer-part-3 ul{
+    padding:0;
+}
+.footer-part-3 ul li{
+    display:inline-block;
+    padding-right:25px;
+}
+.footer-part-3 ul li:last-child{
+    padding-right:0;
+}
+.footer-part-3 ul li a{
+    color: #555555;
+    border-bottom:2px solid #aaaaaa;
+}
+.footer-part-3 ul li a:hover,.footer-part-3 ul li a:active{
+    color: black !important;
+    border-bottom:2px solid black;
+}
+
+footer .adequan-logo{
+    float:left;
+}
+footer .elanco-logo{
+    float:right;
+}
+/*Footer CSS End*/
+
+/*Section CSS General Start*/
+
+.green-background{
+	background: #1e988a;
+}
+.rect-box{
+	display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(59, 59, 59);
+    background: #ffdb00;
+    padding: 8px 41px;
+	margin-bottom:40px;
+    font-size: 20px;
+}
+.grey-background{
+	background: #ffffff;
+}
+.section-main-text{
+    color: #1e988a;
+    font-size: 34px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: ropaSans;
+    padding: 0 11%;
+    line-height:1.1;
+    margin-bottom:10px;
+}
+.section-sub-text{
+	text-align: left;
+}
+.content-container{
+	margin-bottom: 40px;
+}
+.yellow-color{
+	color: #ffdb00;
+}
+.white-color{
+	color:white;
+}
+.boldText{
+    font-weight: bold;
+}
+/*Section CSS General End*/
+
+
+/*intro-section CSS Start */
+.banner-image{
+    background: url(../img/banner.jpg) no-repeat;
+    background-size:100% 100%;
+    font-family:ropaSans;
+     font-size: 46px;
+     height:530px;
+     color:white;
+     text-transform: uppercase;
+     line-height:1.1;
+     text-align: center;
+}
+.banner-image-internal img{
+    width: 100%;
+}
+.banner-image p{
+    padding:50px 20px;
+}
+.adequan-features-wrapper{
+	padding:40px 0px 0px;
+	color:white;
+}
+.features{
+	margin-top:40px;
+}
+.features ul{
+	padding-left:18px;
+	color:#ffdc00;	
+    width: 100%;
+    margin:0;
+}
+.features ul li{
+	margin-bottom: 40px;
+	width:50%;
+    float:left;
+    padding-right:14%;
+}
+.features ul span{
+	color:white;
+}
+
+/*intro-section CSS End */
+/*about-canine-sectionn CSS Start */
+.about-canine-section .section-sub-text{
+    margin-bottom:30px;
+}
+.about-canine-section,.dog-risk-section{
+	padding:50px 0px 0px;
+	text-align: center;
+}
+.dog-risk-section{
+		padding-top:0;
+}
+.canine-facts{
+	text-align: left;
+	margin-bottom: 40px;
+}
+.canine-facts p:first-child{
+	text-transform: uppercase;
+	color: #1e988a;	
+}
+.canine-facts p{
+	margin-bottom: 30px;
+}
+.canine-facts ul{
+	color:#1e988a;	
+}
+.canine-facts ul span{
+	color:black;	
+}
+.canine-facts ul li{
+	margin-bottom: 15px;
+}
+/*about-canine-sectionn CSS End */
+
+/*dog-risk-sectionn CSS Start */
+.dog-risk-section .section-main-text{
+    padding: 0 22%;
+}
+.dog-risk-section .dog-risk-parent-container{
+	z-index: 10;
+	padding-top:40px;
+    position: relative;
+}
+.question-container{
+	margin: 30px 0px 40px;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+.ques-ans {
+    background: white;
+    padding: 36px 17%;
+    color: #1e988a;
+    font-size: 24px;
+}
+.question {
+    min-height:76px;
+}
+.question-list p{
+    display:none;
+}
+.question-list p.active{
+    display:block;
+}
+.answer-panel{
+	padding-top: 30px;
+    font-family: ropaSans
+    font-weight:bold;
+}
+.answer-panel span {
+    padding: 12px 80px;
+    border: 2px solid #ffdb00;
+    text-transform: uppercase;
+}
+.answer-panel span:hover{
+	background:#ffdb00;
+}
+.answer-panel .yes{
+	float:left;
+}
+.answer-panel .no{
+	float:right;
+}
+.ques-no-panel{
+	padding: 17px 0;
+    color: white;
+    text-transform: uppercase;
+}
+.ques-no-panel span{
+	text-transform: lowercase;
+}
+.result-container{
+    background: white;
+    padding: 40px;
+    color:#1e988a;
+    text-align:left;
+    margin-bottom:40px;
+    display:none;
+}
+.results{
+    padding:20px 0;
+}
+.result-heading {
+    text-transform: uppercase;
+    border-bottom: 4px solid #ffdb00;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.user-ques-ans p {
+    padding:10px 0;
+    border-bottom:2px solid #ffdb00;
+    line-height:1.2;
+}
+.user-ques-ans p:last-child{
+    margin-bottom:0;
+    border-bottom:0;
+}
+.user-ques-ans p span:nth-child(2){
+        margin-left: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.result-link-panel{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top:30px;
+
+}
+.result-link-panel span{
+    border-bottom:1px solid #1e988a;
+    cursor:pointer;
+}
+.result-link-panel span:hover{
+    border-bottom:1px solid #ffdb00;
+}
+.result-link-panel span:first-child{
+    margin-right:60px;
+}
+
+.rebate-offer{
+    padding: 10px 13%;
+}
+.rebate-offer span{
+    background: #ffdb00;
+    padding: 10px 18%;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.4;
+}
+/*dog-risk-sectionn CSS End */
+
+/*work-sectionn CSS Start */
+/*work-sectionn CSS Start */
+
+.work-section{
+	padding:40px 0 10px;
+	text-align: center;
+}
+.sup-value{
+    text-align:left;
+    font-style:italic;
+    font-size:14px;
+    margin-top:30px;
+}
+.canine-working{
+	margin: 0px auto 40px;
+}
+.canine-joints{
+    text-align: left;
+}
+.plan-container{
+	text-align: left;
+}
+.plan-heading{
+	font-size:30px;
+	color:#1e988a;	
+	text-transform: uppercase;
+    line-height:1.2;
+    font-family: ropaSans;
+}
+.plan-container hr,.canine-joints hr{
+	margin: 14px 0 30px;
+    border-top: 4px solid #ffdb00;
+}
+.plan-steps-list{
+	margin-top:40px;
+	display:table;
+}
+.plan-step-container {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0px 30px 30px;
+}
+.plan-step-image {
+    float: left;
+    width:25%;
+    text-align: center;
+}
+.plan-step-content{
+	float:right;
+	width: 75%;
+	line-height: 1.5;    
+    padding-left:3%;
+    box-sizing: border-box;
+}
+.step-heading {  
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #1e988a;
+    font-family: ropaSans;
+}
+/*work-sectionn CSS End */
+/*for-vet-sectionn CSS Start */
+
+.for-vet-section{
+	padding:40px 0 0;
+	color:white;
+}
+.for-vet-section a{
+	color:white;
+	border-bottom:1px solid white;
+}
+.brochure-safety-info-container{
+    background-color:white;
+    padding:40px 0;
+    color: rgb(85, 85, 85);
+
+}
+.download-container p{
+    margin-top:20px;
+}
+.download-container ul{
+        padding: 0;
+    margin: 0;
+    list-style: none;
+    text-transform: uppercase;
+}
+.download-container ul a,.safety-infor-containera{
+    border-bottom: 1px solid rgb(85, 85, 85);
+    color: rgb(85, 85, 85);
+}
+.download-container ul a:hover,.safety-infor-container a:hover{
+     border-bottom: 2px solid black; 
+     color:black;    
+}
+
+.safety-info{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 26px;
+    color: #1e988a;
+    margin-top:10px;
+    line-height: 1.2;
+}
+/*for-vet-sectionn CSS End */
+
+/*Rsponsive CSS for Mobiles*/
+@media screen and (max-width:768px){
+	body {
+    	font-size: 17px;
+	}
+    .container{
+        width:100%;
+        padding:0 15px;
+    }
+    .section-main-text{
+        padding:0;
+        font-size:24px;      
+    }
+    .about-canine-section, .dog-risk-section{
+        padding:30px 0 0;
+    }
+    .rect-box {
+        padding: 8px 25px;
+        font-size: 18px;
+        margin-bottom:30px;
+    }
+    .rebate-offers{
+        padding:10px 0;
+    }
+    .rebate-offers p:first-child {
+        font-size: 16px;
+    }
+    .close-button{
+        left:90%;
+    }
+    header{
+        padding:10px 0;
+    }
+    header .navigation-menu-wrapper{
+        margin-top:20px;
+    }
+    .nav-link-wrapper a{       
+        font-size:11px;
+    }  
+    .intro-section {
+        padding-bottom: 20px;
+    }
+    .banner-image{
+        background: url(../img/banner-mobile.jpg) no-repeat;
+        background-size:100% 100%;
+        font-size: 38px;
+        height: 600px;
+    }
+    .banner-image p{
+        padding:50px 0px;
+    } 
+    .adequan-features-wrapper{
+        padding:30px 0 0;
+    }
+    .features {
+        margin-top: 20px;
+    }
+     .features ul {
+        padding-left: 35px;
+    }
+    .features ul li{
+        float:none;
+        width:100%;
+        padding-right:0;
+        margin-bottom:20px;
+    } 
+   
+    .plan-step-container{
+    	width:100%;
+        padding:0;
+        margin-bottom:25px;
+    }
+    .footer-part-4 .adequan-logo {
+    width: 170px;
+    height: 40px;
+}
+.ques-ans{
+padding: 36px 10px;
+font-size:20px;
+}
+.footer-part-3 ul li{
+        padding-right:5px;
+        font-size:15px;
+    }
+.footer-part-4 .elanco-logo {
+    width: 100px;
+    height: 42px;
+}
+.plan-step-content{
+	width:70%;
+}
+.plan-step-image{
+	width:30%;
+}
+.dog-risk-section .section-main-text{
+    padding:0;
+}
+.dog-risk-section .dog-risk-parent-container{
+padding-top:0;
+}
+.content-container{
+    margin-bottom:20px;
+}
+.answer-panel span {
+    padding: 12px 42px;
+}
+.question{
+    min-height:114px;
+}
+.result-container{
+    padding:20px;
+}
+.rebate-offer,.rebate-offer span{
+padding:10px 0;
+width:100%;
+}
+.result-link-panel span{
+    float:right;
+}
+.result-link-panel span:first-child {
+    margin-right: 0px;
+    float:left;
+}
+.result-link-panel {    
+    font-size: 14px;
+    padding: 0 5px;
+}
+.sup-value{
+    margin-top:20px;
+}
+.plan-heading{
+    font-size: 19px;
+}
+.step-heading{
+    font-size:20px;
+}
+.for-vet-section{
+    padding:20px 0 0;
+}
+.brochure-safety-info-container{
+    padding:20px 0;
+}
+.safety-info{
+    font-size: 20px;
+}
+.download-container p{
+    margin-top:10px;
+}
+	
+}
+@media screen and (max-width: 768px) and (orientation:landscape){
+	.answer-panel span {
+    padding: 12px 80px;
+    }
+}
+/*Responsive CSS for IPAD*/
+
+@media screen and (min-width:768px) and (max-width:992px){
+    .container{
+        width:750px;
+    }
+    .ques-ans {
+    padding: 36px 14%;
+}
+	
+}
